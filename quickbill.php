@@ -53,9 +53,9 @@ require_once 'includes/header.php';
 			    <div class="col-sm-4">
 			      <input type="text" class="form-control" id="name" name="name" placeholder="Name" autocomplete="on" />
 			    </div>
-				<label for="contact" class="col-sm-2 control-label">contact </label>
+				<label for="contactNO" class="col-sm-2 control-label">contact </label>
 				 <div class="col-sm-4">
-			      <input type="text" class="form-control" id="contact" name="contact" placeholder="Contact Number" autocomplete="on" />
+			      <input type="number" class="form-control" id="contactNo" name="contactNo" placeholder="Contact Number" autocomplete="on" />
 			    </div><br><br><br>
  </div>
   <hr>
@@ -65,7 +65,7 @@ require_once 'includes/header.php';
           <tr>
             <th class="text-center"> # </th>
             <th class="text-center"> Product </th>
-            <th class="text-center"> Qty </th>
+            <th class="text-center"> Qantity </th>
             <th class="text-center"> Price </th>
             <th class="text-center"> Total </th>
           </tr>
@@ -74,7 +74,7 @@ require_once 'includes/header.php';
           <tr id='addr0'>
             <td>1</td>
             <td><select class="form-control" name='product[]' onChange="option_checker(this);"></select></td>
-            <td><input type="number" name='qty[]' placeholder='Enter Qty' class="form-control qty" step="0" min="0"/></td>
+            <td><input type="number" name='qantity[]' placeholder='Enter Qty' class="form-control qty" step="0" min="0"/></td>
             <td><input type="number" name='price[]' placeholder='Enter Unit Price' class="form-control price" step="0.00" min="0"/></td>
             <td><input type="number" name='total[]' placeholder='0.00' class="form-control total" readonly/></td>
           </tr>
